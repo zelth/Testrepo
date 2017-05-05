@@ -1,6 +1,4 @@
-# Testrepo
-#ghost
-asdfasdf
-wew
-practice gitbash
-adding some text
+	TEST PROJECT
+
+
+Practice makes perfect! :D
