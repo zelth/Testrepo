@@ -1,6 +1,6 @@
-# TEST PROJECT
+# **TEST PROJECT**
 
 
-* Practice makes perfect! :D
+* __Practice makes perfect! :D__
 
-* Pero atik ra diay.. hahaha
+* ~~Pero atik ra diay.. hahaha~~
