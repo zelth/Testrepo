@@ -195,13 +195,13 @@ html {
 
 .middle-content {
   background-color: #660000;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .mid-con {
   max-width: 960px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .mid-con ul {
@@ -219,6 +219,19 @@ html {
   padding: 50px 50px 10px 50px;
 }
 
+.mid-con ul li a {
+  color: #000;
+  cursor: pointer;
+}
+
+.mid-con ul li:hover {
+  background-color: #76c38f;
+}
+
+.mid-con ul li a:hover {
+  text-decoration: none;
+}
+
 .mid-con ul li:last-child {
   margin-right: 0;
 }
@@ -226,6 +239,8 @@ html {
 .mid-con ul li img {
   max-width: 120px;
   max-height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 
@@ -261,6 +276,14 @@ html {
    right: 0;  
    left: auto; 
 }
+
+
+/*-- middle-bottom-content --*/
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
