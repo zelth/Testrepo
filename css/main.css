@@ -1,0 +1,284 @@
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.glyphicon, .glyphicon-menu-hamburger, .toggleNav {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+}
+
+.glyphicon:hover, .glyphicon-menu-hamburger:hover, .toggleNav:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu .open, .menu .open:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.top-wrapper {
+  margin: 0;
+  background-color: #290000;
+  padding: 20px;
+}
+
+/* Header */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header-content ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header-content ul li a:hover {
+  background-color: #76c38f;
+}
+
+.header-content ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.header-content .menu-nav {
+  margin-top: 15px;
+}
+
+.text-logo {
+  margin-top: 20px;
+}
+
+.text-logo h5 {
+  font-size: 1.5em;
+  color: white;
+}
+.text-logo p {
+  color: white;
+  font-size: .7em;
+  margin-top: -12px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+
+/*-- DropDown --*/
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.dropdown .dropdown-content .atext {
+  color: #000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 0px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* --- Carousel section --- */
+
+.container {
+  max-width: 1100px;
+  padding: 20px 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.jumbotron {
+  background-color: rgba(0,0,0,0);
+  float: left;
+  max-width: 300px;
+  margin-top: 50px;
+  margin-left: -60px;
+}
+
+.jumbotron h2 {
+  font-size: 2.2em;
+  color: #fff;
+}
+
+.jumbotron p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.item img {
+  float: right;
+  border: 20px solid gray;
+  border-radius: 50%;
+  transition(.6s ease-in-out left);
+  margin-right: 50px;
+}
+
+.carousel-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.item {
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+
+
+
+
+/*-- Middle Content --*/
+
+.middle-content {
+  background-color: #660000;
+  padding: 50px 0;
+}
+
+.mid-con {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.mid-con ul {
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  text-align: center;
+}
+
+.mid-con ul li {
+  list-style: none;
+  background-color: #fff;
+  margin-right: 20px;
+  padding: 50px 50px 10px 50px;
+}
+
+.mid-con ul li:last-child {
+  margin-right: 0;
+}
+
+.mid-con ul li img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+
+
+/*-- Middle Line --*/
+
+.mid-line {
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+.mid-line span {
+    display: inline-block;
+    width: 250px; 
+    background-color: #303030;
+    color: white; 
+    font-size: 30px;
+    margin-top: -30px;
+    border-radius: 10px;
+}
+.mid-line span:before,
+.mid-line span:after {
+    border-top: 5px solid #303030;
+    display: block;    
+    height: 1em;
+    content: " ";
+    width: 37%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mid-line span:after {
+   right: 0;  
+   left: auto; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .item img {margin: 0 auto; padding: 0;}
+  .mid-line span:before,
+  .mid-line span:after {width: 35%;}
+  .menu ul {display: none;}
+  .menu li {flex-basis: 100%;}
+  .toggleNav {display: block;}
+  .menu ul.open {display: flex;}
+  .menu ul {flex-wrap: wrap;}
+  .menu li {flex-basis:100%; align-content: flex-end;}
+  .text-logo {display: none;}
+}
+
+@media screen and (max-width: 992px) {
+  
+  .mid-con {align-items: center;}
+  .mid-con ul {flex-wrap: wrap; padding: 20px;}
+  .mid-con ul li {flex: 1 1 50%; padding: 50px; margin: 0 auto; margin-bottom: 20px;}
+}

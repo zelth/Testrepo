@@ -1,9 +1,154 @@
-<!doctype <!DOCTYPE html>
-<html>
-<head>
-	<title>Test Project</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Test Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+    </head>
 <body>
+
+    <div class="main-wrapper">
+        <div class="top-wrapper">
+            <div class="header-content">
+                <div class="text-logo">
+                    <h5>Test Project</h5>
+                    <p>Free PSD Website Template</p>
+                </div>
+                <nav class="menu">
+                    <a href="#" class="toggleNav glyphicon glyphicon-menu-hamburger"></a>
+                <ul class="menu-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Style Demo</a></li>
+                    <li><a href="#">Full Width</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn" href="#">Dropdown</a>
+                            <div class="dropdown-content">
+                                <a class="atext" href="#">Link 1</a>
+                                <a class="atext" href="#">Link 2</a>
+                                <a class="atext" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+                </nav>
+            </div> <!-- end of header -->
+
+            <section class="section-white">
+                <div class="container">
+
+                    <div id="mySlide" class="carousel slide" data-ride="carousel" data-interval="8000">
+                        <!-- Indicators 
+                        <ol class="carousel-indicators">
+                        <li data-target="#mySlide" data-slide-to="0" class="active"></li>
+                        <li data-target="#mySlide" data-slide-to="1"></li>
+                        <li data-target="#mySlide" data-slide-to="2"></li>
+                        </ol> -->
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="jumbotron">
+                                    <h2>Heading One</h2>
+                                    <p>Poetry matters more than ever before, because we are more challenged than ever before.</p>
+                                    <button class="btn btn-primary">Click Me</button>
+                                </div>
+                                <img src="img/bleach1.jpg" alt="...">
+                            </div>
+
+                            <div class="item">
+                                <div class="jumbotron">
+                                    <h2>Heading Two</h2>
+                                    <p>Poetry is the essential language that, endlessly branching, enables us to live deeply and envision what matters most</p>
+                                    <button class="btn btn-primary">Click Me</button>
+                                </div>
+                                <img src="img/bleach2.jpg" alt="...">
+                            </div>
+
+                            <div class="item">   
+                                <div class="jumbotron">
+                                    <h2>Heading Three</h2>
+                                    <p>These poisoned sensations have to be Accepted if they’re to be Overcome.</p>
+                                    <button class="btn btn-primary">Click Me</button>
+                                </div>
+                                <img src="img/bleach3.jpg" alt="...">
+                            </div>
+                        </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#mySlide" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#mySlide" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                    </div>
+
+                </div>
+            </section>
+        </div> <!-- End of top-wrapper -->
+
+        <div class="middle-content">
+            <div class="mid-con">
+                <ul class="">
+                    <li class="">
+                        
+                            <img src="img/ichigo.jpg" />
+                                                <h3>SERVICE TITLE</h3>
+                        <p>Together these collections allow us to share the story of William Shakespeare</p>
+                    </li>
+                    <li class="">
+                        
+                            <img src="img/luffy.png" />
+                        
+                        <h3>SERVICE TITLE</h3>
+                        <p>Together these collections allow us to share the story of William Shakespeare</p>
+                    </li>
+                    <li class="">
+                        
+                            <img src="img/natsu.png" />
+                        
+                        <h3>SERVICE TITLE</h3>
+                        <p>Together these collections allow us to share the story of William Shakespeare</p>
+                    </li>
+                    <li class="">
+                        
+                            <img src="img/naruto.png" />
+                        
+                        <h3>SERVICE TITLE</h3>
+                        <p>Together these collections allow us to share the story of William Shakespeare</p>
+                    </li>
+                </ul>
+
+            <div class="mid-line"><span>LATEST WORK</span></div>
+            </div> <!-- End of mid-con -->
+        </div> <!-- End of middle content -->
+
+
+
+    </div> <!-- End of main-wrapper -->
+    
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.toggleNav').on('click',function() {
+                $('.menu ul').toggleClass('open');
+                
+            });
+        });
+    </script>   
 
 </body>
 </html>
