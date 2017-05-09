@@ -267,7 +267,7 @@ html {
     display: block;    
     height: 1em;
     content: " ";
-    max-width: 37%;
+    width: 37%;
     position: absolute;
     left: 0;
     top: 0;
